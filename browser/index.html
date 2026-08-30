@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Browser Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <main class="dashboard">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="brand">
+                <div class="logo">🛡️</div>
+
+                <div>
+                    <h1>Privacy Browser Agent</h1>
+                    <p>Smart Browsing • Privacy First</p>
+                </div>
+            </div>
+
+            <div class="protection-status">
+                <span class="status-dot"></span>
+                PROTECTED
+            </div>
+        </header>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-badge">
+                ✨ AI-POWERED BROWSER
+            </div>
+
+            <h2>
+                Browse Smarter.<br>
+                <span>Stay Protected.</span>
+            </h2>
+
+            <p>
+                Tell the agent what you want to do.
+                It understands the webpage, protects sensitive information,
+                and performs the task for you.
+            </p>
+
+        </section>
+
+
+        <!-- COMMAND BOX -->
+        <section class="command-section">
+
+            <label for="command">
+                🤖 What do you want me to do?
+            </label>
+
+            <div class="command-box">
+
+                <input
+                    type="text"
+                    id="command"
+                    placeholder="Example: Find the search button and click it"
+                >
+
+                <button onclick="runAgent()">
+                    ⚡ RUN AGENT
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATUS CARDS -->
+        <section class="status-grid">
+
+            <div class="status-card vision-card">
+                <div class="card-icon">👁️</div>
+
+                <div>
+                    <h3>VISUAL PERCEPTION</h3>
+                    <p>Ready to analyze</p>
+                </div>
+
+                <span class="ready">● READY</span>
+            </div>
+
+
+            <div class="status-card privacy-card">
+                <div class="card-icon">🛡️</div>
+
+                <div>
+                    <h3>PRIVACY SHIELD</h3>
+                    <p>Sensitive data protected</p>
+                </div>
+
+                <span class="ready">● ACTIVE</span>
+            </div>
+
+
+            <div class="status-card agent-card">
+                <div class="card-icon">🤖</div>
+
+                <div>
+                    <h3>BROWSER AGENT</h3>
+                    <p>Waiting for command</p>
+                </div>
+
+                <span class="ready">● READY</span>
+            </div>
+
+        </section>
+
+
+        <!-- LIVE ACTIVITY -->
+        <section class="activity">
+
+            <div class="section-title">
+                <h3>⚡ LIVE ACTIVITY</h3>
+                <span>REAL-TIME</span>
+            </div>
+
+            <div id="activity-list">
+
+                <div class="activity-item">
+                    <span class="check">✓</span>
+                    <span>Privacy protection initialized</span>
+                    <small>READY</small>
+                </div>
+
+                <div class="activity-item">
+                    <span class="check">✓</span>
+                    <span>Visual perception module ready</span>
+                    <small>READY</small>
+                </div>
+
+                <div class="activity-item">
+                    <span class="check">✓</span>
+                    <span>Browser agent waiting for command</span>
+                    <small>WAITING</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULT -->
+        <section id="result" class="result-box">
+            <div class="result-icon">🤖</div>
+
+            <div>
+                <strong>Agent Status</strong>
+                <p>Enter a command above to start.</p>
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <span>🔒 Privacy-First Architecture</span>
+            <span>•</span>
+            <span>⚡ Lightweight Browser Agent</span>
+            <span>•</span>
+            <span>👁️ On-Device Perception</span>
+        </footer>
+
+    </main>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
