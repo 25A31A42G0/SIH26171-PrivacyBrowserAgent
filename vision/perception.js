@@ -1,37 +1,18 @@
+import { detectElements } from "./element_detector.js";
+
 export function perceive(pageContent) {
     if (!pageContent) {
         return {
             elements: [],
+            count: 0,
             message: "No page content provided"
         };
     }
 
-    const elements = [];
-
-    // Detect buttons
-    const buttons =
-        pageContent.match(/<button[^>]*>(.*?)<\/button>/gi) || [];
-
-    buttons.forEach(button => {
-        elements.push({
-            type: "button",
-            content: button.replace(/<[^>]+>/g, "").trim()
-        });
-    });
-
-    // Detect links
-    const links =
-        pageContent.match(/<a[^>]*>(.*?)<\/a>/gi) || [];
-
-    links.forEach(link => {
-        elements.push({
-            type: "link",
-            content: link.replace(/<[^>]+>/g, "").trim()
-        });
-    });
+    const elements = detectElements(pageContent);
 
     return {
-        elements: elements,
+        elements,
         count: elements.length
     };
 }
